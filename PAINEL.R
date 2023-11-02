@@ -53,7 +53,7 @@ ui <- navbarPage(
                    secondary = "#000080",
                    success = "#dadeba",
                    info = "#800000"),
-  title = h1(em("Painel"), strong("NEGRO")),
+  title = h1(em("Pai"),strong("NE"),em("l"), strong("GRO")),
   tabPanel(
     title = "Principal",
     fluidPage(
@@ -409,7 +409,7 @@ server <- function(input, output, session) {
       dadosanalf <- dadosanalf/dadosmais15
       rm(dadosmais15)
       dadosanalf <- ifelse(is.na(dadosanalf), 0, dadosanalf)
-      dadosanalf <- as.data.frame(round(prop.table(dadosanalf,1)*100,2))
+      dadosanalf <- as.data.frame(dadosanalf)
       dadosanalf$estado <- rownames(dadosanalf)
       dadosanalf <- as.data.frame(dadosanalf[,c(input$radio_analf, "estado")])
       dadosanalf <- merge(br,dadosanalf,all.x = TRUE) 
