@@ -1,0 +1,12 @@
+name: PainelNegro
+title: PainelNegro
+username: cacti-estudos
+account: cacti-estudos
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10286778
+bundleId: 7882953
+url: https://cacti-estudos.shinyapps.io/PainelNegro/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
